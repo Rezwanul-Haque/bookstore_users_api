@@ -6,3 +6,7 @@ func IsInvalid(value string) bool {
 	}
 	return false
 }
+
+func FullName(FirstName string, LastName string) string {
+	return FirstName + " " + LastName
+}

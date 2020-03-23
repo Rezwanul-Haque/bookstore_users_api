@@ -13,7 +13,6 @@ import (
 func goDotEnvVariable(key string) string {
 	// load .env file
 	err := godotenv.Load(".env")
-	fmt.Println("Error: ", err)
 	if err != nil {
 		log.Fatalf(fmt.Sprintf("Error loading .env file %s", err))
 	}
